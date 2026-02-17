@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
 	# Parameters for the simulation
 	directory         = "/home/oscar/a_tasks/";
-	nomejar           = "EPON-Simx.jar";
+	nomejar           = "EPON-Sim.jar";
 	finishTime        = 1000.0;         # In seconds
 	guardTime         = 0.000000624;   # 2 us o 1 us for 10G-EPON, 5 us for EPON, now 624 ns
 	nOnus             = 64;            # Number of ONUs
