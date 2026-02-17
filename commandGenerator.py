@@ -58,19 +58,19 @@ if __name__ == "__main__":
 	sizeOfONUSBuffers = 100;           # 100 Mbytes for 10G-EPON, 10 Mbytes for EPON
 	maxCycleLength    = 0.001;         # 1 ms for 50G-EPON, 10ms, 5ms, 2ms for EPON
 	
-	load  = [55, 60, 65, 70, 75, 80, 85];           # % of load of every ONU that do NOT below to group. If 100% => Congestion in the back-hauling
+	load  = [55, 60, 65, 70, 75, 80, 85, 90];           # % of load of every ONU that do NOT below to group. If 100% => Congestion in the back-hauling
 	
 	algortimos = ["IPACT"]
 	taxonomias = ["FirstFit"]
 	scheduling = ["LIMITED"]
 	frameworks = ["ONLINE"]
-	intrasched = ["STRICTPRIORITY"] #,"LEAKYBUCKET", "LBCONSTANTTOKENSBYCYCLE", "LBVARIBLETOKENSBYCYCLE", "STRICTPRIORITYFIRSTAF"]
+	intrasched = ["STRICTPRIORITY" ,"LEAKYBUCKET", "LBCONSTANTTOKENSBYCYCLE", "LBVARIBLETOKENSBYCYCLE", "STRICTPRIORITYFIRSTAF"]
 	epoch_rounds = {
-	    1: 68#,
-	    # 2: 40,
-	    # 3: 36,
-	    # 4: 30,
-	    # 5: 28
+	    1: 68,
+	    2: 40,
+	    3: 36,
+	    4: 30,
+	    5: 28
 	}
 
 	# Parameters for ONUs that below to group

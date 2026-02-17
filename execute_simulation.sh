@@ -4,6 +4,9 @@
 # Script para iniciar o runner.py com N workers.
 # Ajuste os caminhos e o número de workers conforme seu servidor.
 
+rm -f /home/oscar/a_tasks/.*.swp /home/oscar/a_tasks/*.swp /home/oscar/a_tasks/*.swo /home/oscar/a_tasks/*.swx
+
+
 set -euo pipefail
 
 # Vai para o diretório do script (garante paths relativos consistentes)
@@ -40,7 +43,7 @@ NUM_WORKERS=2
 # idle-timeout: encerra runner após ficar ocioso X segundos (0 = nunca encerra)
 POLL=1.0
 POST_MOVE_DELAY=0.2
-IDLE_TIMEOUT=1800
+IDLE_TIMEOUT=120
 
 # -----------------------------------------------------------------------------
 # EXECUÇÃO
