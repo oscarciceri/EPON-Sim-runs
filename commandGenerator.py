@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
 
 	# Parameters for the simulation
-	directory         = "/home/oscar/a_tasks/";
+	directory         = "a_tasks/";
 	nomejar           = "EPON-Sim.jar";
 	finishTime        = 1000.0;         # In seconds
 	guardTime         = 0.000000624;   # 2 us o 1 us for 10G-EPON, 5 us for EPON, now 624 ns
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 	sizeOfONUSBuffers = 100;           # 100 Mbytes for 10G-EPON, 10 Mbytes for EPON
 	maxCycleLength    = 0.001;         # 1 ms for 50G-EPON, 10ms, 5ms, 2ms for EPON
 	
-	load  = [55, 60, 65, 70, 75, 80, 85, 90];           # % of load of every ONU that do NOT below to group. If 100% => Congestion in the back-hauling
+	load  = [92, 94, 96, 98];           # % of load of every ONU that do NOT below to group. If 100% => Congestion in the back-hauling
 	
 	algortimos = ["IPACT"]
 	taxonomias = ["FirstFit"]
