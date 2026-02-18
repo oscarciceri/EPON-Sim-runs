@@ -58,7 +58,7 @@ if __name__ == "__main__":
 	sizeOfONUSBuffers = 100;           # 100 Mbytes for 10G-EPON, 10 Mbytes for EPON
 	maxCycleLength    = 0.001;         # 1 ms for 50G-EPON, 10ms, 5ms, 2ms for EPON
 	
-	load  = [92, 94, 96, 98];           # % of load of every ONU that do NOT below to group. If 100% => Congestion in the back-hauling
+	load  = [55, 60, 65, 70, 75, 80, 85, 90, 95, 100];           # % of load of every ONU that do NOT below to group. If 100% => Congestion in the back-hauling
 	
 	algortimos = ["IPACT"]
 	taxonomias = ["FirstFit"]
